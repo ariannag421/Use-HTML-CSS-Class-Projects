@@ -345,3 +345,178 @@ HTML labs for IT-2310 Web Programming.
   </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java Haven</title>
+  <style>
+    /* Import a cozy serif font for warm feel */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+    /* Reset default margin/padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-rows: auto 50px 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f1ea; /* Creamy warm background */
+      color: #4b3621; /* Dark coffee brown text */
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #6f4e37; /* Rich coffee brown */
+      color: #f5f1ea; /* Cream text */
+      padding: 30px 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .header p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-top: 8px;
+      font-style: italic;
+      color: #e6d8c3;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #a67b5b; /* Medium warm brown */
+      padding: 12px 0;
+      box-shadow: inset 0 -2px 4px rgba(0,0,0,0.15);
+    }
+
+    .nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 35px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #f5f1ea;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      background-color: #f5f1ea;
+      color: #6f4e37;
+      box-shadow: 0 0 6px #6f4e37aa;
+    }
+
+    .main-content {
+      grid-area: main;
+      padding: 25px 30px;
+      background-color: #fdf8f1; /* Soft cream */
+      font-family: 'Playfair Display', serif;
+    }
+
+    .main-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #6f4e37;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      gap: 20px;
+    }
+
+    .flex-item {
+      background-color: #a67b5b; /* warm brown */
+      color: #f5f1ea; /* cream text */
+      padding: 20px 25px;
+      border-radius: 8px;
+      flex: 1 1 150px;
+      max-width: 200px;
+      text-align: center;
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      box-shadow: 2px 3px 6px rgba(101, 67, 33, 0.4);
+      transition: background-color 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+
+    .flex-item:hover {
+      background-color: #855e42;
+      box-shadow: 3px 5px 10px rgba(101, 67, 33, 0.6);
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #6f4e37;
+      color: #f5f1ea;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 0.9rem;
+      font-family: 'Roboto', sans-serif;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Java Haven</h1>
+    <p>Your daily dose of caffeine and comfort.</p>
+  </header>
+  
+  <nav class="nav">
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main class="main-content">
+    <h2>Featured Coffees</h2>
+    <div class="flex-container">
+      <div class="flex-item">Espresso</div>
+      <div class="flex-item">Cappuccino</div>
+      <div class="flex-item">Latte</div>
+      <div class="flex-item">Mocha</div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Java Haven. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
