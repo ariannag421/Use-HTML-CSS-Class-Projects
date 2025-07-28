@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 3 - CSS Formatting Basics</title>
+
+  <style>
+    /* Apply a light background and Arial font to the whole page */
+    body {
+      background-color: #FFFACD; /* LemonChiffon */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the <h1>: custom color, center, and padding */
+    h1 {
+      color: #8B4513;      /* Custom brown */
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Style unordered list and bullets */
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      color: #800080; /* Purple text color for list items */
+    }
+
+    ul li::before {
+      content: "•";
+      color: #FF4500; /* OrangeRed custom bullet color */
+      position: absolute;
+      left: 0;
+    }
+
+    /* Link styling */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    /* Styled box */
+    .styled-box {
+      border: 2px solid #333;
+      background-color: #d3d3d3;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Lab 3</h1>
+  </header>
+  <main>
+    <p>This is the first paragraph. It contains some placeholder text for styling practice.</p>
+    <p>This is the second paragraph. Feel free to add more content if you'd like.</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <a href="https://www.tri-c.edu">Visit Cuyahoga Community College</a>
+    <div class="styled-box">
+      <p>This is a styled box. Add your CSS rules to make it look great!</p>
+    </div>
+  </main>
+</body>
+</html>
