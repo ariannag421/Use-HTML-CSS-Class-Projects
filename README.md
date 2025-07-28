@@ -234,3 +234,114 @@ HTML labs for IT-2310 Web Programming.
   </main>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styling Text and Fonts</title>
+  <style>
+    /* Apply a sans-serif font to the entire document */
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Style <h1>: font-size 3rem, bold, center-aligned, with red shadow */
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 4px red;
+    }
+
+    /* Style <h2>: font-size 2rem, light font weight, and uppercase */
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    /* Justify all paragraph text and set line height */
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Capitalize first letter of each word in Transforming Text section */
+    section:nth-of-type(3) p {
+      text-transform: capitalize;
+    }
+
+    /* Add subtle gray shadow to "Text Shadow" paragraph */
+    section:nth-of-type(4) p {
+      text-shadow: 1px 1px 2px #888888;
+    }
+
+    /* Center-align the footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Square bullets for unordered list */
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    /* Uppercase Roman numerals for ordered list */
+    ol {
+      list-style-type: upper-roman;
+      padding-left: 20px;
+    }
+
+    /* Add margin between list items */
+    li {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Text Styling Lab</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Font Properties</h2>
+      <p>This paragraph demonstrates the use of font-family, font-size, and font-weight properties.</p>
+    </section>
+    <section>
+      <h2>Text Alignment</h2>
+      <p>This paragraph demonstrates how to align text using the text-align property.</p>
+    </section>
+    <section>
+      <h2>Transforming Text</h2>
+      <p>This paragraph demonstrates text transformation with uppercase, lowercase, and capitalization.</p>
+    </section>
+    <section>
+      <h2>Text Shadow</h2>
+      <p>This paragraph demonstrates how to add shadow effects to text.</p>
+    </section>
+    <section>
+      <h2>Lists</h2>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <ol>
+        <li>First Step</li>
+        <li>Second Step</li>
+        <li>Third Step</li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <p>Styling Text and Fonts Lab © 2025</p>
+  </footer>
+</body>
+</html>
