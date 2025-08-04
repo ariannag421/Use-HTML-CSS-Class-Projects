@@ -520,3 +520,60 @@ HTML labs for IT-2310 Web Programming.
   </footer>
 </body>
 </html>
+using System;
+
+///////////////////////
+// Step 1: Base Class //
+///////////////////////
+class Animal
+{
+    // Virtual method to be overridden by derived classes
+    public virtual void animalSound()
+    {
+        Console.WriteLine("The animal makes a sound");
+    }
+}
+
+/////////////////////////////
+// Step 2: Derived Classes  //
+/////////////////////////////
+class Cat : Animal
+{
+    // Override animalSound for Cat
+    public override void animalSound()
+    {
+        Console.WriteLine("The cat says: meow");
+    }
+}
+
+class Dog : Animal
+{
+    // Override animalSound for Dog
+    public override void animalSound()
+    {
+        Console.WriteLine("The dog says: bow wow");
+    }
+}
+
+/////////////////////////////
+// Step 3: Test in Main()   //
+/////////////////////////////
+class Program
+{
+    static void Main()
+    {
+        // Animal reference, Animal object
+        Animal animalRef1 = new Animal();
+
+        // Animal reference, Cat object
+        Animal animalRef2 = new Cat();
+
+        // Animal reference, Dog object
+        Animal animalRef3 = new Dog();
+
+        // Call animalSound on each to demonstrate runtime polymorphism
+        animalRef1.animalSound();  // Output: The animal makes a sound
+        animalRef2.animalSound();  // Output: The cat says: meow
+        animalRef3.animalSound();  // Output: The dog says: bow wow
+    }
+}
